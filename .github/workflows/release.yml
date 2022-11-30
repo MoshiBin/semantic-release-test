@@ -20,4 +20,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx --package=semantic-release --package=semantic-release-gitmoji -- semantic-release
+        run: npx --package=semantic-release --package=semantic-release-gitmoji --package=@semantic-release/git --package=@semantic-release/github -- semantic-release
