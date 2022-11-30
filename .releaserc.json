@@ -2,7 +2,25 @@
   "branches": ["main"],
   "tagFormat": "${version}",
   "plugins": [
-    "semantic-release-gitmoji",
+    ["semantic-release-gitmoji", {
+      "releaseRules": {
+        "major": [":boom:"],
+        "minor": [
+          ":sparkles:",
+          ":arrow_up:",
+          ":arrow_down:",
+          ":heavy_plus_sign:",
+          ":heavy_minus_sign:"
+        ],
+        "patch": [
+          ":bug:",
+          ":ambulance:",
+          ":lock:"
+        ]
+      },
+      "releaseNotes": {
+      }
+    }],
     "@semantic-release/github",
     "@semantic-release/git"
   ]
