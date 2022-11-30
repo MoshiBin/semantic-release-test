@@ -1,2 +1,2 @@
 # semantic-release-test
-Testing out semantic release
+Testing out semantic release + gitmoji
